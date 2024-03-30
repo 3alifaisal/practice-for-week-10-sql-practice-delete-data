@@ -1,0 +1,15 @@
+sqlite3 example.db
+SQLite version 3.39.5 2022-10-14 20:58:05
+Enter ".help" for usage hints.
+sqlite> .read seed-data.sql;
+Error: cannot open "seed-data.sql;"
+sqlite> .read seed-data.sql
+sqlite> DELETE FROM puppies WHERE id = 9;
+sqlite> DELETE FROM puppies WHERE microchipped = 0;
+sqlite> select * from puppies ;
+1|Cooper|1|Miniature Schnauzer|18|1
+2|Indie|0.5|Yorkshire Terrier|13|1
+4|Zoe|0.8|Korean Jindo|32|1
+6|Ladybird|0.6|Labradoodle|20|1
+8|Jaxson|0.4|Beagle|19|1
+sqlite> ^D
